@@ -1,5 +1,5 @@
 #include "raylib.h"
-
+#include "field.h"
 int main(void)
 {
 	// Initialization
@@ -8,10 +8,10 @@ int main(void)
 	const int screenHeight = 720;
 	const int rectWidth = 150;
 	const int rectHeight = 150;
-	const int xPos = 20;
-	const int yPos = 20;
+	const int xPos = 0;
+	const int yPos = 200;
 
-	InitWindow(screenWidth, screenHeight, "SuperWindow");
+	InitWindow(screenWidth, screenHeight, "Memo");
 
 	SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
 	//--------------------------------------------------------------------------------------
@@ -28,30 +28,10 @@ int main(void)
 		//----------------------------------------------------------------------------------
 		BeginDrawing();
 
-		ClearBackground(BEIGE);
-		int stepX = rectWidth;
-		int stepY = rectHeight;
-		for (int i = 0; i < 4; i++)
-		{
-			DrawRectangleLines(xPos + stepX, yPos, rectWidth, rectHeight, BLACK);
-			stepX += rectWidth;
-		}
-		int newY = yPos + stepY;
-		stepX = rectWidth;
-		for (int j = 0; j < 4; j++)
-		{
-			DrawRectangleLines(xPos + stepX, newY, rectWidth, rectHeight, BLACK);
-			stepX += rectWidth;
-		}
-		newY = newY + stepY;
-		stepX = rectWidth;
-		for (int j = 0; j < 4; j++)
-		{
-			DrawRectangleLines(xPos + stepX, newY, rectWidth, rectHeight, BLACK);
-			stepX += rectWidth;
-		}
+		ClearBackground(RAYWHITE);
+		drawField(rectWidth, rectHeight, xPos, yPos);
 
-		//DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+		DrawText("Try to find two exact pictures!", 5, 100, 55, ORANGE);
 
 		EndDrawing();
 		//----------------------------------------------------------------------------------
