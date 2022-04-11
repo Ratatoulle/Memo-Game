@@ -1,46 +1,32 @@
 #include "raylib.h"
 #include "field.h"
+
 int main(void)
 {
-	// Initialization
-	//--------------------------------------------------------------------------------------
 	const int screenWidth = 900;
-	const int screenHeight = 720;
+	const int screenHeight = 1050;
 	const int rectWidth = 150;
 	const int rectHeight = 150;
 	const int xPos = 0;
 	const int yPos = 200;
+	int sizeX = 3;
+	int sizeY = 4;
+	int dimension = sizeX * sizeY;
 
 	InitWindow(screenWidth, screenHeight, "Memo");
 
-	SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
-	//--------------------------------------------------------------------------------------
-
-	// Main game loop
-	while (!WindowShouldClose())    // Detect window close button or ESC key
+	SetTargetFPS(60);
+	while (!WindowShouldClose())
 	{
-		// Update
-		//----------------------------------------------------------------------------------
-		// TODO: Update your variables here
-		//----------------------------------------------------------------------------------
-
-		// Draw
-		//----------------------------------------------------------------------------------
 		BeginDrawing();
 
 		ClearBackground(RAYWHITE);
-		drawField(rectWidth, rectHeight, xPos, yPos);
-
-		DrawText("Try to find two exact pictures!", 5, 100, 55, ORANGE);
+		drawField1(rectWidth, rectHeight, xPos, yPos, sizeX);
+		//DrawCircle(rectWidth + rectWidth / 2, yPos + rectHeight / 2, rectWidth / 2, DARKBLUE);
+		DrawText("Try to find two identical pictures!", 5, 100, 50, ORANGE);
 
 		EndDrawing();
-		//----------------------------------------------------------------------------------
 	}
-
-	// De-Initialization
-	//--------------------------------------------------------------------------------------
-	CloseWindow();        // Close window and OpenGL context
-	//--------------------------------------------------------------------------------------
-
+	CloseWindow();
 	return 0;
 }

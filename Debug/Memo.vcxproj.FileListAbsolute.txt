@@ -1,3 +1,6 @@
 D:\study\PROGRAMMING LANGS\Memo\Debug\Memo.vcxproj.CopyComplete
 D:\study\PROGRAMMING LANGS\Memo\Debug\Memo.exe
 D:\study\PROGRAMMING LANGS\Memo\Debug\raylib.dll
+D:\study\PROGRAMMING LANGS\Repo\Memo\Debug\Memo.exe
+D:\study\PROGRAMMING LANGS\Repo\Memo\Debug\Memo.vcxproj.CopyComplete
+D:\study\PROGRAMMING LANGS\Repo\Memo\Debug\raylib.dll
