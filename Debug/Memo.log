@@ -1,3 +1,3 @@
 ﻿  main.c
-D:\study\PROGRAMMING LANGS\Repo\Memo\main.c(24,13): warning C4013: drawField1: нет определения; предполагается "extern" с возвратом типа "int"
+D:\study\PROGRAMMING LANGS\Repo\Memo\main.c(23,13): warning C4013: drawField1: нет определения; предполагается "extern" с возвратом типа "int"
   Memo.vcxproj -> D:\study\PROGRAMMING LANGS\Repo\Memo\Debug\Memo.exe
