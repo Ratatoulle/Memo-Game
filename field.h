@@ -1,3 +1,3 @@
 #pragma once
 
-void drawField(int rectWidth, int rectHeight, int xPos, int yPos);
+void drawField(int rect_width, int rect_height, int x_pos, int y_pos, int field_width, int field_height);

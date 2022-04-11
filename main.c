@@ -3,16 +3,16 @@
 
 int main(void)
 {
-	const int screenWidth = 900;
-	const int screenHeight = 600;
-	const int rectWidth = 50;
-	const int rectHeight = 50;
-	const int xPos = 0;
-	const int yPos = 75;
-	int fieldWidth = 7;
-	int fieldHeight = 9;
+	const int screen_width = 900;
+	const int screen_height = 600;
+	const int rect_width = 50;
+	const int rect_height = 50;
+	const int x_pos = 0;
+	const int y_pos = 75;
+	int field_width = 7;
+	int field_height = 9;
 
-	InitWindow(screenWidth, screenHeight, "Memo");
+	InitWindow(screen_width, screen_height, "Memo");
 
 	SetTargetFPS(60);
 	while (!WindowShouldClose())
@@ -20,7 +20,7 @@ int main(void)
 		BeginDrawing();
 
 		ClearBackground(RAYWHITE);
-		drawField1(rectWidth, rectHeight, xPos, yPos, fieldWidth, fieldHeight);
+		drawField(rect_width, rect_height, x_pos, y_pos, field_width, field_height);
 		//DrawCircle(rectWidth + rectWidth / 2, yPos + rectHeight / 2, rectWidth / 2, DARKBLUE);
 		DrawText("Try to find two identical pictures!", 5, 0, 50, ORANGE);
 
