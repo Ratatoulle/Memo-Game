@@ -9,6 +9,7 @@ void drawField(int rect_width, int rect_height, int x_pos, int y_pos, int field_
 		for (int i = 0; i < field_width; i++)
 		{
 			DrawRectangleLines(x_pos + stepX, y_pos, rect_width, rect_height, BLACK);
+			DrawCircle(rect_width / 2 + stepX, y_pos + rect_height / 2, rect_width / 2, RED);
 			stepX += rect_width;
 		}
 		int newY = y_pos + stepY;
@@ -19,7 +20,7 @@ void drawField(int rect_width, int rect_height, int x_pos, int y_pos, int field_
 		return;
 }
 
-void drawObjects(int rectWidth, int rectHeight, int xPos, int yPos, int fieldWidth, int fieldHeight)
+void drawFigures(int rect_width, int rect_height, int x_pos, int y_pos, int field_width, int field_height, Vector2* figures)
 {
 
 }

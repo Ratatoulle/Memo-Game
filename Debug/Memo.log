@@ -1,3 +1,4 @@
 ﻿  main.c
-D:\study\PROGRAMMING LANGS\Repo\Memo\main.c(23,13): warning C4013: drawField1: нет определения; предполагается "extern" с возвратом типа "int"
+D:\study\PROGRAMMING LANGS\Repo\Memo\main.c(18,34): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\study\PROGRAMMING LANGS\Repo\Memo\main.c(19,29): warning C4244: =: преобразование "int" в "float", возможна потеря данных
   Memo.vcxproj -> D:\study\PROGRAMMING LANGS\Repo\Memo\Debug\Memo.exe
